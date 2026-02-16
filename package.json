@@ -1,0 +1,28 @@
+{
+  "name": "projet-fiches-recettes-frontend-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "db:create": "node migrations/01.create-tables.js",
+    "db:seed": "node migrations/02.seed-tables.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annabuffo/Projet-fiches-recettes-frontend-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annabuffo/Projet-fiches-recettes-frontend-/issues"
+  },
+  "homepage": "https://github.com/annabuffo/Projet-fiches-recettes-frontend-#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "jest": "^30.2.0",
+    "node": "^25.6.0",
+    "svelte": "^5.50.1"
+  }
+}

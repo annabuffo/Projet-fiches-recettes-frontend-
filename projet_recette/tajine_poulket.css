@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(95, 207, 95);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2, h3 {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+p {
+    
+}
+
+img {
+    margin: auto;
+    display: flex;
+    height: 100%;
+    width: 100% ;
+
+}
+
+.ingré {
+    display: flexbox;
+}
