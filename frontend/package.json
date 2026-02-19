@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch script.js",
+    "db:create": "node migrations/01.create-table.js",
+    "db:seed": "node migrations/01.seed-table.js",
+    "db:delete": "node migrations/01.delete-table.js"
   },
   "keywords": [],
   "author": "",
