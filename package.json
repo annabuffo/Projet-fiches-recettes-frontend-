@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node --watch index.js",
     "db:create": "node migrations/01.create-tables.js",
+    "db:reset": "node migrations/01.reset-tables.js",
     "db:seed": "node migrations/02.seed-tables.js"
   },
   "repository": {
@@ -22,7 +23,10 @@
   "dependencies": {
     "express": "^5.2.1",
     "jest": "^30.2.0",
+    "joi": "^18.0.2",
     "node": "^25.6.0",
-    "svelte": "^5.50.1"
+    "postgre": "^0.1.8",
+    "postgres": "^3.4.8",
+    "svelte": "^5.51.2"
   }
 }
