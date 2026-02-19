@@ -14,7 +14,7 @@ h1 {
     color: #d4af37;
 }
 
-.nav-barre-condition-utilisation {
+.nav-barre-home-page {
     color: white;
     list-style: none;
     padding: 0;
@@ -24,27 +24,49 @@ h1 {
 }
 
 
-.nav-barre-condition-utilisation li {
+.nav-barre-home-page li {
     color: white;
-    display: inline;
+    display: inline-flex;
     text-align: right;
-    display: inline;
-
+    padding: 0%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    list-style: none;
+    margin-bottom: 10px;
 }
-
 
 /*FIN HEADER*/
 
 /*PARTIE MAIN*/
+.title-condition-utilisation {
+    text-align: center;
+    background-color: transparent;
+}
+
+.condition-utilisation {
+    border: 2px solid gray;
+    border-radius: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+    background-color: rgb(6, 6, 48);
+}
+
 h2 {
     color: #d4af37;
+    text-align: center;
+    background-color: transparent;
 }
 
 p {
     color: white;
+    text-align: center;
+    font-size: large;
+    background-color: transparent;
 }
 
 .email {
+    background-color: transparent;
     color: white;
 }
 

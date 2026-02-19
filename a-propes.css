@@ -12,39 +12,61 @@ h1 {
     color: #d4af37;
 }
 
-.nav-barre-a-propos {
+.nav-barre-home-page {
     color: white;
+    list-style: none;
     padding: 0;
     margin: 0;
     text-align: right;
     border-bottom: 2px solid #d4af37;
 }
 
-.nav-barre-a-propos li {
+
+.nav-barre-home-page li {
     color: white;
-    display: inline;
+    display: inline-flex;
     text-align: right;
     padding: 0%;
     margin-left: 20px;
+    margin-bottom: 10px;
     list-style: none;
+    margin-bottom: 10px;
 }
 
 /*FIN HEADER*/
 
 /*PARTIE MAIN*/
 
-h2 {
-    color: #d4af37;
+.about-page {
+    border: 2px solid gray;
+    border-radius: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-p {
+.title-about-page {
+    text-align: center;
+}
+
+.about-page h2 {
+    color: #d4af37;
+    text-align: center;
+}
+
+.about-page p {
     color: white;
+    text-align: center;
+}
+
+.section-icon {
+    text-align: center;
 }
 
 .liste-des-fonctionnalités {
+    text-align: center;
     color: white;
-    list-style: none;
-
+    padding: 0;
+    margin: 0;
 }
 
 /*FIN MAIN*/
@@ -141,6 +163,9 @@ nav ul li a:hover {
 .mention-légal {
     color: white;
     text-align: center;
+    border-top: 1px solid #d4af37;
+    margin-top: 20px;
+    padding: 16px;
 }
 
 /*FIN FOOTER*/

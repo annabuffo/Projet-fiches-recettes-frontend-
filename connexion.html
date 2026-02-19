@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="connexion.css">
-    <title>Document</title>
+    <title>Page de connexion</title>
 </head>
 <body>
     
@@ -13,7 +13,7 @@
         <div class="nav-barre">
             <h1>🎬 Ciné Délices</h1>
             <nav class="nav-barre-home-page">
-                <li><a href="./index.html">ACCUEIL</a></li>
+                <li><a href="./frontend/index.svelte">ACCUEIL</a></li>
                 <li><a href="./films.html">FILMS</a></li>
                 <li><a href="./recettes.htm">RECETTES</a></li>
                 <li><a href="./connexion.html">CONNEXION</a></li>
@@ -25,16 +25,17 @@
 
     <!-- Début du MAIN -->
     <main>
-        <div>
-            <h2>connexion</h2>
-            <form class="connexion">
+        <div class="container-login">
+            <h2 class="title-login">CONNEXION</h2>
+            <form action="connexion">
                 <label for="email" >email</label>
                 <input type="text" placeholder="" required>
                 <label for="mot_de_passe">mot de passe</label>
                 <input type="text" placeholder="" required>
-                <button type="submit">Envoyer</button>
+                <button class="submit-login" type="submit">Envoyer</button> 
+                <p class="redirection-register">Vous n'avez pas de compte ? <a href="./inscription.html">Inscrivez-vous</a></p>
             </form>
-            <p>Vous n'avez pas de compte ? <a href="./inscription.html">Inscrivez-vous</a></p>
+           
         </div>
     </main>
     <!-- Fin du MAIN -->
@@ -44,12 +45,12 @@
         <div class="footer-film-strip">
             <div class="barre"></div>
         </div>
-        <nav class="nav-barre-from-the-bottom">
+         <nav class="nav-barre-from-the-bottom">
             <ul>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Politiques de confidentialité</a></li>
-                <li><a href="#">Condition d'utilisation</a></li>
+                <li><a href="./a-propos.html">A propos</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./politique-confidentialité.html">Politiques de confidentialité</a></li>
+                <li><a href="./condition-utilistation.html">Condition d'utilisation</a></li>
             </ul>
         </nav>
         <div class="footer">
@@ -66,7 +67,7 @@
 
         <form class="newsletter">
             <input type="email" placeholder="ton@email.com" required>
-            <button type="submit">SUBSCRIBE</button>
+            <button class="newsletter-submit" type="submit">SUBSCRIBE</button>
         </form>
 
         <div class="mention-légal">

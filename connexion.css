@@ -1,8 +1,10 @@
 * {
     background-color: black;
+    box-sizing: border-box;
 }
 
 /*PARTIE HEADER*/
+
 h1 {
     color: #d4af37;
 }
@@ -16,29 +18,66 @@ h1 {
     border-bottom: 2px solid #d4af37;
 }
 
-
-
 .nav-barre-home-page li {
     color: white;
-    display: inline;
+    display: inline-flex;
     text-align: right;
     padding: 0%;
     /*padding 0% + margin 0% + list style none : permet de supprimer les puces*/
     margin-left: 20px;
     list-style: none;
-
+    margin-bottom: 10px;
 }
 
 /*FIN HEADER*/
 
 /*PARTIE MAIN*/
 
-h2 {
+.container-login {
+    background-color: rgb(6, 6, 48);
+    width: 90%;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 8px;
+    margin: 60px auto;
+    border: 1px solid gray;
+}
+
+.container-login label {
+    text-align: center;
+    flex-direction: column;
     color: white;
+}
+
+
+.container-login input {
+    background-color: rgb(12, 12, 78);
+    border-radius: 2%;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 20px;
+    border: 1px solid gray;
+    color: white;
+}
+
+
+
+.title-login {
+    color: white;
+    background-color: rgb(6, 6, 48);
     text-align: center;
 }
 
-.connexion {
+.submit-login {
+    background-color: #e94560;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e94560;
+    border-radius: 2%;
+}
+
+.redirection-register {
+    text-align: center;
     color: white;
 }
 
@@ -52,23 +91,26 @@ p {
 
 .footer-film-strip {
     box-sizing: border-box;
-    height: 30px; /*hauteur de la ligne*/
-    background-color: #d4af37; 
-    width: 100%; /*prend 100% de la largeur*/
+    height: 30px;
+    /*hauteur de la ligne*/
+    background-color: #d4af37;
+    width: 100%;
+    /*prend 100% de la largeur*/
 
-    display: flex; /*sert à conternir les carrer noir à l'intérieur de la barre jaune*/
+    display: flex;
+    /*sert à conternir les carrer noir à l'intérieur de la barre jaune*/
     justify-content: center;
     align-items: center;
 }
 
-.strip {
-  width: 100em; 
-  height: 14px;
-  background: repeating-linear-gradient( /*sert à répéter les couleur des carrer noir*/
-    90deg,
-    #000 0 16px,
-    #d4b000 4px 20px
-  );
+.barre {
+    width: 100em;
+    height: 14px;
+    background: repeating-linear-gradient(
+            /*sert à répéter les couleur des carrer noir*/
+            90deg,
+            #000 0 16px,
+            #d4b000 4px 20px);
 }
 
 
@@ -85,18 +127,13 @@ nav ul li a {
     color: white;
 }
 
-nav ul li a:hover {
-    color: white;
-    /* Couleur au survol */
-}
-
 .nav-barre-from-the-bottom {
     color: white;
 }
 
 .footer {
     padding: 40px;
-   text-align: center;
+    text-align: center;
     color: white;
 }
 
@@ -117,6 +154,7 @@ nav ul li a:hover {
     object-fit: contain;
 }
 
+
 .news {
     color: white;
     text-align: center;
@@ -125,6 +163,7 @@ nav ul li a:hover {
 .newsletter {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .newsletter input {
@@ -134,13 +173,25 @@ nav ul li a:hover {
     background: transparent;
     color: white;
     outline: none;
-    
+}
+
+.newsletter-submit {
+    background-color: #d4af37;
+    padding: 18px;
+    border: 2px solid #d4af37;
+    border: none;
+    color: black;
+    font-weight: bold;
 }
 
 .mention-légal {
     color: white;
+    margin-top: 30px;
     text-align: center;
-    gap: 20px;
+    border-top: 1px solid #d4af37;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*FIN FOOOTER*/
